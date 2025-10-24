@@ -9,7 +9,7 @@ python -m venv .venv
 ### Activating virtual environment (cmd)
 
 ```
-.venv\Script\activate.bat
+.venv\Scripts\activate.bat
 ```
 
 ### Dependencies
@@ -27,3 +27,11 @@ python-dotnev - env management
 Storing in requirements.txt file
 
 > pip freeze > requirements.txt
+
+### For running
+
+```
+uvicorn {main file}:app --host 0.0.0.0 --port 8000 --reload
+```
+
+> uvicorn main:app --host 0.0.0.0 --port 8000 --reload
